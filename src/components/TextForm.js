@@ -48,7 +48,7 @@ export default function TextForm(props) {
       </div>
       <div className="container mt-5">
         <h2>Content Summary</h2>
-        <p>Total words : {text.split(" ").length.filter((a) => a.length !==0)}</p>
+        <p>Total words : {text.split(" ").filter((a) => a.length !==0).length}</p>
         <p>Toal Characters: {text.length}</p>
 
         <h3>Preview</h3>
